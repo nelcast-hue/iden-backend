@@ -53,6 +53,6 @@ app.post('/api/okter/stopp', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log('IDEN API kjorer pa http://localhost:' + PORT);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log('IDEN API kjorer pa port ' + PORT);
 });
